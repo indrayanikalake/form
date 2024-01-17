@@ -18,7 +18,8 @@ import {
 import axios from 'axios';
 import 'datatables.net';
 
-// Define a new Yup schema for Step 2
+
+
 const step2ValidationSchema = Yup.object().shape({
   address: Yup.string().optional(),
   state: Yup.string().optional(),
@@ -28,7 +29,7 @@ const step2ValidationSchema = Yup.object().shape({
 });
 
 const Step2Form: React.FC<{ onSubmit: SubmitHandler<any> }> = ({ onSubmit }) => {
-    const { personalDetails, submittedUsers } = useSelector((state: any) => state.userAdditionalDetails);
+    const {  submittedUsers } = useSelector((state: any) => state.userAdditionalDetails);
   const dispatch = useDispatch();
   const { control, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(step2ValidationSchema),
@@ -36,7 +37,7 @@ const Step2Form: React.FC<{ onSubmit: SubmitHandler<any> }> = ({ onSubmit }) => 
 
   const [countries, setCountries] = useState<string[]>([]);
 
-  // Fetch country options from the API
+ 
   useEffect(() => {
     const fetchCountries = async () => {
       try {
@@ -135,7 +136,7 @@ const Step2Form: React.FC<{ onSubmit: SubmitHandler<any> }> = ({ onSubmit }) => 
     </form>
     
 
-     <table id="example1" className=" display">
+     <table id="example1" className="table display">
           <thead>
             <tr>
               <th>Address</th>

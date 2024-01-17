@@ -34,7 +34,7 @@ const userSlice = createSlice({
     },
     submitUser: (state) => {
       state.submittedUsers.push({ ...state.personalDetails });
-      // Reset personalDetails after submission
+    
       state.personalDetails = initialState.personalDetails;
     },
   },

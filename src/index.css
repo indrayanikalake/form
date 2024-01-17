@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   
 }
 
 code {
@@ -16,7 +17,8 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:90%;
+  width:40%;
+ 
   padding:2rem
 }
 .form * {
@@ -26,7 +28,8 @@ code {
   margin-top: 1rem;
 }
 .table{
-border:1px solid gray
+border:1px solid gray;
+background:white
   
 }
 .bg_gray{
@@ -37,4 +40,20 @@ border:1px solid gray
 }
 .button{
   margin-left: 5rem;
+}
+.display_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #f415f1 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #f01bf4 97.5%);
+}
+.image{
+  position: absolute;
+  left:52%;
+  top:15%;
 }

@@ -36,7 +36,7 @@ const Step1Form: React.FC<Step1FormProps> = ({ onSubmit }) => {
 
   return (
     <div >
-    <form className='form' onSubmit={handleSubmit(onNext)}>
+    <form className='form ' onSubmit={handleSubmit(onNext)}>
       <Typography variant="h5">Personal Details</Typography>
       
        <Paper elevation={3}>
@@ -127,11 +127,12 @@ const Step1Form: React.FC<Step1FormProps> = ({ onSubmit }) => {
     
       <div />
       </Paper>
-    </form>
-
      
+     
+    </form>
+   
 
-     <table id="example" className=" display">
+     <table id="example" className="table display">
           <thead>
             <tr>
               <th>Name</th>
