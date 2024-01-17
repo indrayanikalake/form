@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   
+   background-color: #f8eff8;
 }
 
 code {
@@ -23,6 +23,7 @@ code {
 }
 .form * {
   margin-bottom: 2rem;
+  
 }
 .form > * + * {
   margin-top: 1rem;
